@@ -13,3 +13,13 @@ const orc1 = new Inimigo("Orc", 100, "Machado");
 const orc2 = new Inimigo("Orc", 100, "Machado");
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+# 🧩 Padrão de Projeto: Flyweight
+O padrão de projeto Flyweight também faz parte do grupo dos padrões estruturais, e sua principal função é economizar memória quando o sistema precisa criar muitos objetos semelhantes.
+
+A ideia central é compartilhar partes comuns do estado entre múltiplas instâncias de objetos, ao invés de armazenar esses dados repetidamente em cada um deles. Isso é especialmente útil em jogos, simulações ou sistemas que lidam com grandes volumes de entidades idênticas.
+
+O Flyweight é ideal quando se vai ter grande volume de objetos, pois ele prioriza o uso eficiente de memória e deixando o código mais leve e otimizado.
+

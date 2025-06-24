@@ -1,4 +1,4 @@
-// sem Prototype
+// sem Flyweight
 class Inimigo {
   tipo: string;
   vida: number;

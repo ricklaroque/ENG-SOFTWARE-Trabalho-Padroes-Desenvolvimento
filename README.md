@@ -16,10 +16,10 @@ const orc2 = new Inimigo("Orc", 100, "Machado");
 
 
 
-# 🧩 Padrão de Projeto: Flyweight
-O padrão de projeto Flyweight também faz parte do grupo dos padrões estruturais, e sua principal função é economizar memória quando o sistema precisa criar muitos objetos semelhantes.
+# 🧱 Padrão de Projeto: Builder
+O padrão de projeto Builder também faz parte do grupo dos padrões criacionais. Ele é usado quando queremos construir objetos passo a passo, principalmente quando a criação envolve muitos parâmetros ou combinações diferentes.
 
-A ideia central é compartilhar partes comuns do estado entre múltiplas instâncias de objetos, ao invés de armazenar esses dados repetidamente em cada um deles. Isso é especialmente útil em jogos, simulações ou sistemas que lidam com grandes volumes de entidades idênticas.
+Esse padrão é útil quando você precisa criar objetos complexos de forma flexível, legível e reutilizável.
 
-O Flyweight é ideal quando se vai ter grande volume de objetos, pois ele prioriza o uso eficiente de memória e deixando o código mais leve e otimizado.
+Com o padrão Builder, podemos criar um objeto "modelo" (um builder configurado) e gerar várias instâncias iguais de forma limpa e flexível.
 

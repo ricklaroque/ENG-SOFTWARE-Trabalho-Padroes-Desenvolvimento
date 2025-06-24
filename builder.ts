@@ -53,7 +53,6 @@ class InimigoBuilder {
   }
 }
 
-// Exemplo de uso
 const orc = new InimigoBuilder()
   .setTipo("Orc")
   .setVida(100)

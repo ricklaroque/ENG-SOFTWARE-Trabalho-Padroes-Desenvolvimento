@@ -8,10 +8,19 @@ Esse padrão é especialmente útil quando você precisa *criar vários objetos 
 Sem utilizar o Prototype, surge um problema comum. Por exemplo: imagine um jogo em que você precisa criar vários inimigos do tipo **Orc**. Todos eles compartilham os mesmos atributos — mesmo tipo, mesma quantidade de vida e a mesma arma.
 
 Se não usarmos o padrão Prototype, a cada novo inimigo você terá que reescrever os mesmos valores manualmente:
-
 const orc1 = new Inimigo("Orc", 100, "Machado");
 const orc2 = new Inimigo("Orc", 100, "Machado");
 
+Outra função importante do Prototype é que podemos alterar somente o clone, sem modificar o objeto original.
+
+Por excemplo: digamos que você precise de um Orc mais forte para ser o chefe da fase. 
+Em vez de criar um novo do zero, basta clonar o orcOriginal e alterar apenas os atributos desejados:
+
+const orcOriginal = new Inimigo("Orc", 100, "Machado");
+
+const orcChefe = orcOriginal.clone();
+orcChefe.vida = 250;
+orcChefe.arma = "Espada flamejante";
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

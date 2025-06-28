@@ -8,14 +8,7 @@ Sem utilizar o Prototype, surge um problema comum. Por exemplo: imagine um jogo 
 
 Se não usarmos o padrão Prototype, a cada novo inimigo você terá que reescrever os mesmos valores manualmente: const orc1 = new Inimigo("Orc", 100, "Machado"); const orc2 = new Inimigo("Orc", 100, "Machado");
 
-Outra função importante do Prototype é que podemos alterar somente o clone, sem modificar o objeto original.
-
-Por excemplo: digamos que você precise de um Orc mais forte para ser o chefe da fase. Em vez de criar um novo do zero, basta clonar o orcOriginal e alterar apenas os atributos desejados:
-
 ```ts
-const orcOriginal = new Inimigo("Orc", 100, "Machado");
-
-const orcChefe = orcOriginal.clone(); orcChefe.vida = 250; orcChefe.arma = "Espada flamejante";
 
 // sem Prototype
 class Inimigo {
@@ -57,3 +50,13 @@ class Inimigo implements Prototype {
 
 const orcOriginal = new Inimigo("Orc", 100, "Machado");
 const orcClone = orcOriginal.clone(); // Sem repetir atributos
+```
+
+Outra função importante do Prototype é que podemos alterar somente o clone, sem modificar o objeto original.
+
+Por excemplo: digamos que você precise de um Orc mais forte para ser o chefe da fase. Em vez de criar um novo do zero, basta clonar o orcOriginal e alterar apenas os atributos desejados:
+
+```ts
+const orcOriginal = new Inimigo("Orc", 100, "Machado");
+
+const orcChefe = orcOriginal.clone(); orcChefe.vida = 250; orcChefe.arma = "Espada flamejante";

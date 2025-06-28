@@ -1,4 +1,5 @@
-🧬 Padrão de Projeto: Prototype
+# 🧬 Padrão de Projeto: Prototype
+
 O padrão de projeto Prototype faz parte do grupo dos padrões criacionais, ou seja, aqueles que lidam com a criação de objetos. Sua principal proposta é permitir que um objeto seja clonado em vez de ser criado do zero com o operador new e todos os seus parâmetros novamente.
 
 Esse padrão é especialmente útil quando você precisa criar vários objetos muito parecidos entre si, ou quando o processo de criação de um objeto envolve algum tipo de custo — seja de tempo, processamento ou complexidade.

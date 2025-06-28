@@ -1,4 +1,5 @@
-🧩 Padrão de Projeto: Singleton
+# 🧩 Padrão de Projeto: Singleton
+
 O Singleton é um padrão criacional que tem como finalidade controlar a criação de objetos, garantindo que uma classe possua apenas uma única instância ao longo de toda a execução do sistema. Além disso, ele oferece um acesso global e controlado a essa instância única.
 
 Esse padrão é especialmente útil quando há a necessidade de um objeto central que gerencie recursos ou funcionalidades compartilhadas, como gerenciadores de configurações, serviços de log ou conexões com bancos de dados. Com o Singleton, evita-se a geração de múltiplas instâncias que poderiam ocasionar problemas como conflitos ou uso excessivo de recursos.
